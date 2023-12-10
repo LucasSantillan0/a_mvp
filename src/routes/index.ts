@@ -3,7 +3,7 @@ import { saveAccessToken } from '../controllers/accessToken'
 
 export const router = express.Router()
 
-router.get('/code',saveAccessToken)
+router.get('',saveAccessToken)
 
 
 

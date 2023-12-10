@@ -7,4 +7,4 @@ exports.router = void 0;
 var express_1 = __importDefault(require("express"));
 var accessToken_1 = require("../controllers/accessToken");
 exports.router = express_1.default.Router();
-exports.router.get('/code', accessToken_1.saveAccessToken);
+exports.router.get('', accessToken_1.saveAccessToken);
