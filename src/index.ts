@@ -5,7 +5,7 @@ import { router } from './routes'
 
 const app = express()
 app.use(json())
-app.use(router)
+app.use('api', router)
 
 //mongoose.connect('mongodb://localhost:27017/test-todo', {
 //  useNewUrlParser: true,
