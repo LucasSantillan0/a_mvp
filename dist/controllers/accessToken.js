@@ -13,7 +13,8 @@ exports.saveAccessToken = function (req, res) {
             'client_id': 'TESTUSER925637351',
             'code': query.code,
             'redirect_uri': 'https://a-q9bs8kfh2-lucassantillan0.vercel.app'
-        }
+        },
+        requestOptions: {}
     }).then(function (result) { return console.log(result); })
         .catch(function (error) { return console.log(error); });
     res.send("ok");

@@ -15,7 +15,9 @@ export const saveAccessToken = (req: Request, res: Response) => {
          'client_id': 'TESTUSER925637351',
          'code': query.code as string,
          'redirect_uri': 'https://a-q9bs8kfh2-lucassantillan0.vercel.app'
-     }
+        
+     },
+     requestOptions:{}
  }).then((result) => console.log(result))
      .catch((error) => console.log(error));
    res.send("ok")
