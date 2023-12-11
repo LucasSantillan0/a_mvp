@@ -11,8 +11,8 @@ export const saveAccessToken = (req: Request, res: Response) => {
 
  oauth.create({
      body: {
-         'client_secret': 'TEST-679298462899911-121017-dad4168e5b2a2757ac3b9da145d6838b-418436878',
-         'client_id': 'TEST-d801492c-bb66-45d7-9fef-41ef3fc3a5a0',
+         'client_secret': '6bnJQjxhFs',
+         'client_id': 'TESTUSER925637351',
          'code': query.code as string,
          'redirect_uri': 'https://a-q9bs8kfh2-lucassantillan0.vercel.app'
         
