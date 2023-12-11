@@ -9,8 +9,8 @@ exports.saveAccessToken = function (req, res) {
     var oauth = new mercadopago_1.OAuth(client);
     oauth.create({
         body: {
-            'client_secret': '6bnJQjxhFs',
-            'client_id': 'TESTUSER925637351',
+            'client_secret': 'TEST-679298462899911-121017-dad4168e5b2a2757ac3b9da145d6838b-418436878',
+            'client_id': '679298462899911',
             'code': query.code,
             'redirect_uri': 'https://a-q9bs8kfh2-lucassantillan0.vercel.app'
         },
