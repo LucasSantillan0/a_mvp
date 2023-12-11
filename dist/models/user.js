@@ -10,12 +10,24 @@ var userSchema = new mongoose_1.default.Schema({
         type: String,
         required: true
     },
-    description: {
+    hashedPassword: {
         type: String,
         required: true
-    }
+    },
+    houses: [
+        {
+            type: mongoose_1.default.Schema.Types.ObjectId,
+            ref: "House"
+        }
+    ],
+    rented: [
+        {
+            type: mongoose_1.default.Schema.Types.ObjectId,
+            ref: "House"
+        }
+    ],
 });
+exports.User = mongoose_1.default.model('User', userSchema);
 userSchema.statics.build = function (attr) {
     return new exports.User(attr);
 };
-exports.User = mongoose_1.default.model('User', userSchema);
